@@ -1,4 +1,38 @@
 .tweet-text{
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
+
+.new-tweet textarea {
+    border: none;
+    border-bottom: 4px solid black;
+    width: 90%;
+    height: 2em;
+    padding: 10px;
+  }
+  
+  .new-tweet label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .new-tweet button {
+    background-color: #4056A1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Bungee', cursive;
+    cursor: pointer;
+    margin-right: 41.3em;
+
+  }
+
+  .new-tweet output {
+    font-weight: bold;
+    font-family: 'Bungee', cursive;
+  }
+
+  .new-tweet .counter.invalid {
+    color: red;
+  }
