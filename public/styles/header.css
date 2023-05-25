@@ -1,0 +1,31 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(221, 167, 18); 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+
+  
+}
+
+header h2 {
+  margin-bottom: 1em;
+  margin-top: -1.5em;
+}
+
+header img {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 50%; 
+  margin-top: 5em;
+
+}
+
+header span {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
