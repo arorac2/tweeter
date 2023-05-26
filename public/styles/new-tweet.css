@@ -15,7 +15,7 @@
     display: block;
     margin-bottom: 10px;
   }
-
+ 
   .new-tweet button {
     background-color: #4056A1;
     color: white;
@@ -24,8 +24,10 @@
     font-size: 16px;
     font-family: 'Bungee', cursive;
     cursor: pointer;
+    /* margin-right: 73.2em; */
+    float: left;
+    margin-left: 4em;
 
-    margin-right: 73.2em;
 
   }
 
@@ -46,3 +48,20 @@
   }
   
   
+.new-tweet .button-out{
+  width: 100%;
+}
+
+/* .new-tweet .button-out button{
+  width: 13%;
+  float: left;
+} */
+
+.new-tweet .button-out .counter {
+  width: 13%;
+  float: right;
+}
+
+.new-tweet .button-out .count-out{
+  width: 85%;
+}

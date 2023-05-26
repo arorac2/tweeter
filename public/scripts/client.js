@@ -98,6 +98,12 @@ $(document).ready(function () {
       success: function (response) {
         data = response;
         renderTweets(data);
+
+        const firstTweet = $(".tweet").first(); // Select the first tweet element
+        if (firstTweet.length > 0) {
+          const username = firstTweet.find(".username").text();
+          $("#username").text(username);
+        }
       },
       error: function (error) {
         console.error("Error loading tweets:", error);
