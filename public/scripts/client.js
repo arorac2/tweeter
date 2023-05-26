@@ -21,7 +21,7 @@ $(document).ready(function () {
             <p>${tweet.content.text}</p>
           </div>
           <footer>
-            <p class="timestamp">${timeago.format(1461116232227)}</p>
+            <p class="timestamp">${timeago.format(tweet.created_at)}</p>
             <div class="icons">
               <i class="fas fa-flag"></i>
               <i class="fas fa-retweet"></i>
@@ -42,13 +42,12 @@ $(document).ready(function () {
       const $tweet = createTweetElement(tweet);
       $tweetsContainer.prepend($tweet);
     }
+    
   };
 
   // Event listener for form submission
   $("form").submit(function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-
-    // Get the tweet content from the form
+    event.preventDefault(); 
     const tweetContent = $("#tweet-text").val();
 
     // Perform validation checks
@@ -73,12 +72,9 @@ $(document).ready(function () {
       data: formData,
     })
       .done(function (response) {
-        // Handle the successful response from the server
-        console.log("Tweet submitted successfully:", response);
         loadTweets();
-
-        // Reset the form input field
         $(event.target).trigger("reset");
+        $("#tweet-text").trigger("input");
       })
       .fail(function (error) {
         // Handle the error response from the server
@@ -111,4 +107,10 @@ $(document).ready(function () {
 
   // Call the loadTweets function to fetch and render tweets on page load
   loadTweets();
+
+  $("#scroll-icon").click(function () {
+    const makeTweetSection = $(".new-tweet");
+    const scrollTo = makeTweetSection.offset().top - 100; // Adjust the value as needed
+    $("html, body").animate({ scrollTop: scrollTo }, 500); // Adjust the animation speed as needed
+  });
 });
