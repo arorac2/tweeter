@@ -1,7 +1,7 @@
 .profile-header {
   height: 400px;
   width: 100%;
-  background-color: rgb(242, 197, 101); 
+  background-color: rgb(242, 197, 101);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -14,12 +14,11 @@
 }
 
 .profile-header img {
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 50%; 
+  border-radius: 50%;
   margin-top: 5em;
-
 }
 .profile-header span {
   margin-top: 1em;

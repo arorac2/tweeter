@@ -5,7 +5,6 @@
  */
 
 $(document).ready(function () {
-  // Create tweet element based on tweet object
   const $errorMessage = $("#error-message");
   const createTweetElement = function (tweet) {
     const $tweet = $(`
@@ -42,23 +41,28 @@ $(document).ready(function () {
       const $tweet = createTweetElement(tweet);
       $tweetsContainer.prepend($tweet);
     }
-    
   };
 
   // Event listener for form submission
   $("form").submit(function (event) {
-    event.preventDefault(); 
+    event.preventDefault();
     const tweetContent = $("#tweet-text").val();
 
     // Perform validation checks
     if (!tweetContent) {
-        $("#error-message").text("Error: Tweet content cannot be empty").slideDown();
-    
+      $("#error-message")
+        .text("Error: Tweet content cannot be empty")
+        .slideDown();
+
       return; // Exit the function to prevent form submission
     }
 
     if (tweetContent.length > 140) {
-        $("#error-message").text("Error: Tweet content exceeds the maximum length of 140 characters").slideDown();
+      $("#error-message")
+        .text(
+          "Error: Tweet content exceeds the maximum length of 140 characters"
+        )
+        .slideDown();
       return; // Exit the function to prevent form submission
     }
 
@@ -89,7 +93,6 @@ $(document).ready(function () {
     $errorMessage.slideUp(); // Hide the error message
   });
 
-
   const loadTweets = function () {
     $.ajax({
       method: "GET",
@@ -116,7 +119,7 @@ $(document).ready(function () {
 
   $("#scroll-icon").click(function () {
     const makeTweetSection = $(".new-tweet");
-    const scrollTo = makeTweetSection.offset().top - 100; // Adjust the value as needed
-    $("html, body").animate({ scrollTop: scrollTo }, 500); // Adjust the animation speed as needed
+    const scrollTo = makeTweetSection.offset().top - 100; 
+    $("html, body").animate({ scrollTop: scrollTo }, 500); 
   });
 });

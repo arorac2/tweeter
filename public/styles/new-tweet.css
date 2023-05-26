@@ -1,67 +1,53 @@
-/* .tweet-text{
-    justify-content: center;
-    align-items: flex-start;
-} */
-
 .new-tweet textarea {
-    border: none;
-    border-bottom: 4px solid black;
-    width: 90%;
-    height: 2em;
-    padding: 10px;
-  }
-  
-  .new-tweet label {
-    display: block;
-    margin-bottom: 10px;
-  }
- 
-  .new-tweet button {
-    background-color: #4056A1;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: 'Bungee', cursive;
-    cursor: pointer;
-    /* margin-right: 73.2em; */
-    float: left;
-    margin-left: 4em;
-
-
-  }
-
-  .new-tweet output {
-    font-weight: bold;
-    font-family: 'Bungee', cursive;
-  }
-
-  .new-tweet .counter.invalid {
-    color: red;
-  }
-
-  #error-message {
-    display: none;
-    color: red;
-    font-size: 24px;
-    margin-top: 5px;
-  }
-  
-  
-.new-tweet .button-out{
-  width: 100%;
+  border: none;
+  border-bottom: 4px solid black;
+  width: 90%;
+  height: 2em;
+  padding: 10px;
 }
 
-/* .new-tweet .button-out button{
-  width: 13%;
+.new-tweet label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-tweet button {
+  background-color: #4056a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Bungee", cursive;
+  cursor: pointer;
   float: left;
-} */
+  margin-left: 4em;
+}
+
+.new-tweet output {
+  font-weight: bold;
+  font-family: "Bungee", cursive;
+}
+
+.new-tweet .counter.invalid {
+  color: red;
+}
+
+#error-message {
+  display: none;
+  color: red;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.new-tweet .button-out {
+  width: 100%;
+}
 
 .new-tweet .button-out .counter {
   width: 13%;
   float: right;
 }
 
-.new-tweet .button-out .count-out{
+.new-tweet .button-out .count-out {
   width: 85%;
 }
