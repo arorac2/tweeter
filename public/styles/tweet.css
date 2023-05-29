@@ -25,7 +25,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  /* margin-right: 27em; */
   margin-top: 1em;
 }
 
@@ -53,7 +52,11 @@
   border: 1px solid black;
 }
 
-.tweet:hover i {
-  color: red;
+.tweet .icons i {
+  transition: color 0.2s; 
+}
+
+.tweet .icons i:hover {
+  cursor: pointer;
 }
 

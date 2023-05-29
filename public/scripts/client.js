@@ -30,8 +30,36 @@ $(document).ready(function () {
         </article>
       `);
 
+      $tweet.find(".fa-flag").addClass("flag-icon");
+      $tweet.find(".fa-retweet").addClass("retweet-icon");
+      $tweet.find(".fa-heart").addClass("heart-icon");
+
     return $tweet;
   };
+
+  $(".tweets-container").on("mouseenter", ".flag-icon", function () {
+    $(this).css("color", "red");
+  });
+
+  $(".tweets-container").on("mouseleave", ".flag-icon", function () {
+    $(this).css("color", "");
+  });
+
+  $(".tweets-container").on("mouseenter", ".retweet-icon", function () {
+    $(this).css("color", "red");
+  });
+
+  $(".tweets-container").on("mouseleave", ".retweet-icon", function () {
+    $(this).css("color", "");
+  });
+
+  $(".tweets-container").on("mouseenter", ".heart-icon", function () {
+    $(this).css("color", "red");
+  });
+
+  $(".tweets-container").on("mouseleave", ".heart-icon", function () {
+    $(this).css("color", "");
+  });
 
   const renderTweets = function (tweets) {
     const $tweetsContainer = $(".tweets-container");
