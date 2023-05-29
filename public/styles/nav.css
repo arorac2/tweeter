@@ -1,7 +1,7 @@
 nav {
   height: 120px;
   width: 100%;
-  background-color: #4056a1;
+  background-color: rgb(242, 197, 101);
   color: #ffffff;
   padding: 0 1.5em;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ nav {
 }
 
 .fas {
-  color: rgb(242, 197, 101);
+  color: red;
 }
 
 nav span {
@@ -40,4 +40,19 @@ header {
 
 header div {
   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    height: 120px;
+    background-color: #4056a1;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  span.write-new-tweet {
+    font-size: 1.5rem;
+  }
 }

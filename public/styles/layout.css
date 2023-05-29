@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -20,12 +22,8 @@ body {
   font-size: 24px;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
- nav .logo {
-  font-family: 'Bungee', cursive;
+nav .logo {
+  font-family: "Bungee", cursive;
 }
 
 main {
@@ -33,4 +31,52 @@ main {
   margin: 0 auto;
   background-color: inherit;
   text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  main {
+    width: 150%;
+    background-color: #f4f1ec;
+    margin-top: 120px;
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+  .profile-header {
+    justify-content: flex-start;
+    width: 15%;
+    margin-top: 15em;
+    margin-left: 1em;
+  }
+
+  .new-tweet textarea {
+    margin-top: 2em;
+  }
+
+  .tweets-container .tweet header {
+    height: 5%;
+    width: 100%;
+  }
+
+  .tweet header img {
+    margin-bottom: -1em;
+  }
+
+  .profile-header img {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+  }
+
+  .profile-header h2 {
+    margin-top: -8em;
+  }
+
+  .new-tweet textarea {
+    margin-top: 2em;
+  }
 }

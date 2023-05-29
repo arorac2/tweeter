@@ -4,6 +4,7 @@
   width: 90%;
   height: 2em;
   padding: 10px;
+  margin-top: 1.5em;
 }
 
 .new-tweet label {
@@ -19,8 +20,7 @@
   font-size: 16px;
   font-family: "Bungee", cursive;
   cursor: pointer;
-  float: left;
-  margin-left: 4em;
+  margin-left: -35em;
 }
 
 .new-tweet output {
@@ -51,3 +51,9 @@
 .new-tweet .button-out .count-out {
   width: 85%;
 }
+
+@media only screen and (min-width: 1024px) {
+  .new-tweet {
+    width: 100%;
+  } 
+ }
